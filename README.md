@@ -5,7 +5,7 @@ Go was created in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google
 
 [Yadav, A. (2024, August 23). Go Programming Language (Introduction). Geeks for Geeks. Retrieved September 11, 2024.](https://www.geeksforgeeks.org/go-programming-language-introduction/)
 
-Information about this language can be found in documentation on the [Go developers website](https://go.dev/doc/). This website also provides Go tutorials as does the [W3Schools website](https://www.w3schools.com/go/index.php).
+Information about this language can be found in documentation on [The Go Programming Language website](https://go.dev/doc/). This website also provides Go tutorials as does the [W3Schools website](https://www.w3schools.com/go/index.php).
 
 # Getting Started
 ## Installation
