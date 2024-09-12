@@ -17,7 +17,7 @@ Information about this language can be found in documentation on the [Go develop
 1. A helpful video can be found [here](https://www.youtube.com/watch?v=1MXIGYrMk80).
 2. Type **go mod init** in a terminal window followed by the name of your code’s module to enable dependency tracking. This command creates a go.mod file which tracks the modules of all imported packages in your code.
 3. Create a .go file in your new module.
-4. Write your program. **See hello.go** for a basic example.
+4. Write your program. See [hello_example](https://github.com/danielleWilliams4dx/Go-CS330/tree/main/hello_example) for a basic example.
 5. To run your file, **cd** to your new module and then type **go run fileName.go**.
    
 ## Comments
