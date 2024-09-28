@@ -75,7 +75,7 @@ func(bool, ...string) // takes in a bool and any number of strings and returns n
 ```
 
 ## A Quick Note About Structs
-In Go, **structs**, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name.
+In Go, **structs**, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name. Struct attributes and methods can be accessed using the "." dot operator.
 
 ```
 package main
@@ -93,7 +93,8 @@ func (c Cat) Meow(){
 }
 
 func main() {
-	luna := Cat{"Luna", "Siamese", 8}
+	luna := Cat{"Oops!", "Siamese", 8}
+	luna.name = "Luna" // changes the name attribute from Oops! to Luna
 	luna.Meow() // Luna says meow!
 }
 ```
