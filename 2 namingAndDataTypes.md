@@ -3,7 +3,7 @@ This file references the [Go programming language documentation](https://go.dev/
 
 Additional sources are cited below.
 
-## Naming Requirements and Conventions for Variables, Structures, and Functions
+## Naming Requirements and Conventions for Variables, Structure Instances, and Functions
 - Names are case sensitive
 - Names must begin with a letter or underscore and cannot begin with a digit or symbol
 - camelCase is conventionally used rather than snake_case
@@ -75,7 +75,7 @@ func(bool, ...string) // takes in a bool and any number of strings and returns n
 ```
 
 ## A Quick Note About Objects
-In Go, **structs**, or structures, are similar to objects in object-oriented programming. Structs are created with types, which are similar to classes. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name.
+In Go, **structs**, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name.
 
 ```
 package main
@@ -97,6 +97,7 @@ func main() {
 	luna.Meow() // Luna says meow!
 }
 ```
+[W3Schools. (n.d). Go Structures. Retrieved 28 September 20, 2024.](https://www.w3schools.com/go/go_struct.php)
 
 [The Go Programming Language. (n.d). Methods. Retrieved 28 September 20, 2024.](https://go.dev/tour/methods/1)
 
