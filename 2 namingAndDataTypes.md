@@ -3,10 +3,20 @@ This file references the [Go programming language documentation](https://go.dev/
 
 Additional sources are cited below.
 
-## Variable Naming Requirements and Conventions
+## Naming Requirements and Conventions for Variables, Structures, and Functions
 - Names are case sensitive
 - Names must begin with a letter or underscore and cannot begin with a digit or symbol
 - camelCase is conventionally used rather than snake_case
+- Internal identifiers should begin with a lowercase letter
+- Exported identifiers should begin with a capital letter
+
+```
+// internal
+func calcAge(birthYear int, currYear int) int { return currYear - birthYear }
+
+// exported
+func CalcAge(birthYear int, currYear int) int { return currYear - birthYear }
+```
 
 [W3Schools. (n.d.). Go Variable Naming Rules. Retrieved September 20, 2024.](https://www.w3schools.com/go/go_variable_naming_rules.php)
 
@@ -47,11 +57,22 @@ Variables can be declared with implicit type through the **:=** short assignment
 
 ```a := 17``` ```b, c := true, false```
 
-Variables can be declared explicitly with **var** and its type.
+Variables can be declared explicitly with **var** and its type (with its name sandwiched between)
 
 ```var a int = 17``` ```var b, c bool = true, false```
 
 The reflect package has a **TypeOf** method that can be used to check the type of a variable.
+
+## Function Declarations
+Functions are declared with the **func** type. Each parameter must have a designated type. All parameters must have a name, otherwise they must be solely identified by their type such that each is the only instance of its type in the function. Zero or more arguments can be passed into the final parameter of a _variadic_ function. In these functions, the last parameter is prefixed with a **...**. The return type(s) should be declared after the parameter list in the result list. Functions without a declared return type return **nil**.
+
+```
+func(a int, b int) int // takes in two ints and returns an int
+
+func(int, float32) (int, float32) // takes in and returns an int and float32
+
+func(bool, ...string) // takes in a bool and any number of strings and returns nil
+```
 
 ## Type Conversions
 Go does not support implicit type conversion except for mixed operations of variables with constants in which the lower data type is cast to a higher data type. Attempting to implicitly cast in the other direction, such as converting a floating point constant to an integer, throws an error.
