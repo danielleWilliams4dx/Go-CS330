@@ -74,6 +74,32 @@ func(int, float32) (int, float32) // takes in and returns an int and float32
 func(bool, ...string) // takes in a bool and any number of strings and returns nil
 ```
 
+## A Quick Note About Objects
+In Go, **structs**, or structures, are similar to objects in object-oriented programming. Structs are created with types, which are similar to classes. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name.
+
+```
+package main
+
+import "fmt"
+
+type Cat struct {
+	name string
+	breed string
+	age int
+}
+
+func (c Cat) Meow(){
+	fmt.Println(c.name + " says meow!")
+}
+
+func main() {
+	luna := Cat{"Luna", "Siamese", 8}
+	luna.Meow() // Luna says meow!
+}
+```
+
+[The Go Programming Language. (n.d). Methods. Retrieved 28 September 20, 2024.](https://go.dev/tour/methods/1)
+
 ## Type Conversions
 Go does not support implicit type conversion except for mixed operations of variables with constants in which the lower data type is cast to a higher data type. Attempting to implicitly cast in the other direction, such as converting a floating point constant to an integer, throws an error.
 
