@@ -74,7 +74,7 @@ func(int, float32) (int, float32) // takes in and returns an int and float32
 func(bool, ...string) // takes in a bool and any number of strings and returns nil
 ```
 
-## A Quick Note About Structs
+## Introduction to Structs
 In Go, **structs**, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name. Struct attributes and methods can be accessed using the "." dot operator.
 
 ```
