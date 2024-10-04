@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-/*
-Call your functions and save the results of the function calls in variables.
-Write a function that tests whether your language is pass-by-reference or pass-by-value.
-*/
 func main(){
 	a := 5
 	b := 7
