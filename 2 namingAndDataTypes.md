@@ -63,17 +63,6 @@ Variables can be declared explicitly with **var** and its type (with its name sa
 
 The reflect package has a **TypeOf** function that can be used to check the type of a variable.
 
-## Function Declarations
-Functions are declared with the **func** type. Each parameter must have a designated type. All parameters must have a name, otherwise they must be solely identified by their type such that each is the only instance of its type in the function. Zero or more arguments can be passed into the final parameter of a _variadic_ function. In these functions, the last parameter is prefixed with a **...**. The return type(s) should be declared after the parameter list in the result list. Functions without a declared return type return **nil**.
-
-```
-func(a int, b int) int // takes in two ints and returns an int
-
-func(int, float32) (int, float32) // takes in and returns an int and float32
-
-func(bool, ...string) // takes in a bool and any number of strings and returns nil
-```
-
 ## Introduction to Structs
 In Go, **structs**, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name. Struct attributes and methods can be accessed using the "." dot operator.
 
@@ -101,25 +90,6 @@ func main() {
 [W3Schools. (n.d). Go Structures. Retrieved 28 September 20, 2024.](https://www.w3schools.com/go/go_struct.php)
 
 [The Go Programming Language. (n.d). Methods. Retrieved 28 September 20, 2024.](https://go.dev/tour/methods/1)
-
-## Scope
-In Go, scope is determined by code blocks and is summarized in the table below.
-
-→ means "to the end"
-
-| Scope | Identifiers |
-| --- | --- |
-| Universe Block | [Predeclared identifiers](https://go.dev/ref/spec#Predeclared_identifiers) |
-| Package Block | Constants, types, variables, or functions (but not type-defined methods) that are declared outside of any function |
-| File Block | Imported package names |
-| Function Body | Method receivers, function parameters, or result variables |
-| After Function Name → Function Body | Function type parameters or method receiver type parameters|
-| After Type Name → TypeSpec | Type parameters |
-| After ConstSpec/VarSpec/ShortVarDecl → Innermost Containing Block | Local constants or variables in a function |
-| TypeSpec Identifier → Innermost Containing Block | Local type identifiers in a function |
-
-**Note:** an identifier may be redeclared in an inner code block, but all references within the scope of the redeclared identifier will refer to the redeclared version (it is a separate entity).
-
 
 ## Type Conversions
 Go does not support implicit type conversion except for mixed operations of variables with constants in which the lower data type is cast to a higher data type. Attempting to implicitly cast in the other direction, such as converting a floating point constant to an integer, throws an error.
