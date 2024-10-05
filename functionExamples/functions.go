@@ -36,6 +36,7 @@ func main(){
 		fmt.Println("Go is pass by reference by default")
 	}
 
+	//swapping test with pointers
 	fmt.Println("\nUsing Pointers:\nInside main before swapping: a = " + fmt.Sprint(a) + ", b = " + fmt.Sprint(b))
 	swap2(aAddr,bAddr)
 	fmt.Println("Inside main after swapping: a = " + fmt.Sprint(a) + ", b = " + fmt.Sprint(b))
@@ -69,14 +70,15 @@ func split(str string) [2]string{
 	return arr
 }
 
-// tests whether Go is pass-by-reference or pass-by-value by default
+// attempts to swap values and tests whether Go is pass-by-reference or pass-by-value by default
 func swap1(a int, b int){
 	var temp int = a
 	a = b
 	b = temp
 	fmt.Println("Inside the function after swapping: a = " + fmt.Sprint(a) + ", b = " + fmt.Sprint(b))
 }
-
+	
+// swaps values with pointers
 func swap2(a *int, b *int){
 	var temp int = *a
 	*a = *b
