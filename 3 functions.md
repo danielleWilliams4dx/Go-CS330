@@ -39,7 +39,7 @@ func swap2(a *int, b *int){
 ```
 See [functionExamples](https://github.com/danielleWilliams4dx/Go-CS330/tree/main/functionExamples) for more examples.
 
-[Agrawal, M. (2023, March 15). Golang Call by Reference and Call by Value. Scaler. Retrieved October 5, 2024.](https://www.scaler.com/topics/golang/golang-call-by-reference-and-call-by-value/l). 
+[Agrawal, M. (2023, March 15). Golang Call by Reference and Call by Value. Scaler. Retrieved October 5, 2024.](https://www.scaler.com/topics/golang/golang-call-by-reference-and-call-by-value/). 
 
 ## Side Effects
 
