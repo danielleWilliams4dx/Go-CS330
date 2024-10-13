@@ -12,7 +12,7 @@ switch-case statements
 for-loops
 */
 
-//struct represents a calendar date
+// struct represents a calendar date
 type Date struct{
 	day int
 	month int
