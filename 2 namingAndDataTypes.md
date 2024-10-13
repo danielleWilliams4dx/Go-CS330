@@ -21,17 +21,17 @@ func CalcAge(birthYear int, currYear int) int { return currYear - birthYear }
 [W3Schools. (n.d.). Go Variable Naming Rules. Retrieved September 20, 2024.](https://www.w3schools.com/go/go_variable_naming_rules.php)
 
 ## Data Types
-- bool - represents a boolean value and is either true or false
-- string - represents a string value, which is any sequence of characters
-- int - represents an integer 
-- float32 - represents a 32 bit floating point value
-- float64 - represents a 64 bit floating point value
-- (*) - represents the set of all pointers of a specified base type
-- [array](https://www.w3schools.com/go/go_arrays.php) - holds a list of values of the same type in a single variable
-- [slice](https://www.w3schools.com/go/go_slices.php) - like an array, contains a set of values, but is uniquely determined by its ability to grow and shrink
-- [map](https://go.dev/blog/maps) - represents a hash table and is the go equivalent of a dictionary
-- [chan](https://go.dev/ref/spec#Channel_types) - represents a channel and permits functions in concurrent execution to communicate by transmitting values of a specified type
-- [interface](https://go.dev/ref/spec#Interface_types) - represents a type set and contains a list of interface elements (a method or type element)
+- **bool** - represents a boolean value and is either true or false
+- **string** - represents a string value, which is any sequence of characters
+- **int** - represents an integer 
+- **float32** - represents a 32 bit floating point value
+- **float64** - represents a 64 bit floating point value
+- **(*)** - represents the set of all pointers of a specified base type
+- [**array**](https://www.w3schools.com/go/go_arrays.php) - holds a list of values of the same type in a single variable
+- [**slice**](https://www.w3schools.com/go/go_slices.php) - like an array, contains a set of values, but is uniquely determined by its ability to grow and shrink
+- [**map**](https://go.dev/blog/maps) - represents a hash table and is the go equivalent of a dictionary
+- [**chan**](https://go.dev/ref/spec#Channel_types) - represents a channel and permits functions in concurrent execution to communicate by transmitting values of a specified type
+- [**interface**](https://go.dev/ref/spec#Interface_types) - represents a type set and contains a list of interface elements (a method or type element)
 
 ### A Note About Floats
 Float point values with only trailing zeros after the decimal point will be outputted without any decimal places (2.0 → 2).
@@ -53,18 +53,18 @@ In Go, slices, arrays, maps, and channels are mutable whereas strings, pointers,
 ## Variable Declarations
 Go is explicitly and implicitly typed. See [dataTypesExample](https://github.com/danielleWilliams4dx/Go-CS330/tree/main/dataTypesExample).
 
-Variables can be declared with implicit type through the **:=** short assignment statement.
+Variables can be declared with implicit type through the ```:=``` short assignment statement.
 
 ```a := 17``` ```b, c := true, false```
 
-Variables can be declared explicitly with **var** and its type (with its name sandwiched between)
+Variables can be declared explicitly with ```var``` and its type (with its name sandwiched between)
 
 ```var a int = 17``` ```var b, c bool = true, false```
 
-The reflect package has a **TypeOf** function that can be used to check the type of a variable.
+The reflect package has a ```TypeOf``` function that can be used to check the type of a variable.
 
 ## Introduction to Structs
-In Go, **structs**, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name. Struct attributes and methods can be accessed using the "." dot operator.
+In Go, ```structs```, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name. Struct attributes and methods can be accessed using the '.' dot operator.
 
 ```
 package main
@@ -101,27 +101,27 @@ The syntax for converting between types is as follows:
 [The Go Programming Language. (n.d). Type Conversions. Retrieved 21 September 20, 2024.](https://go.dev/tour/basics/13)
 
 ## Operators
-- The assignment operator = can be used with any data type.
-- Other assignment operators (+=, -=, *=, /=, %=, &=, |=, ^=, >>=, <<=) can be used with numeric types.
-- The arithmetic operators (+, -, *, /, %, ++, --) can be used with numeric types.
-- The comparison operators (==, !=) can be used with any data type.
-- Other comparison operators (>, <, >=, <=) can be used with numeric types and strings.
-- Logical operators (&&, ||, !), also known as boolean operators, are used to solve the logic between variables or values.
-- [Bitwise Operators](https://www.geeksforgeeks.org/go-operators/#Bitwise%20Operators) (&, |, ^, <<, >>) can be used with integers and have applications in binary computations.
+- The assignment operator ```=``` can be used with any data type.
+- Other assignment operators ```+= -= *= /= %= &= |= ^= >>= <<=``` can be used with numeric types.
+- The arithmetic operators ```+ - * / % ++ --)``` can be used with numeric types.
+- The comparison operators ```== !=``` can be used with any data type.
+- Other comparison operators ```> < >= <=``` can be used with numeric types and strings.
+- Logical operators ```&& || !```, also known as boolean operators, are used to solve the logic between variables or values.
+- [Bitwise Operators](https://www.geeksforgeeks.org/go-operators/#Bitwise%20Operators) ```& | ^ << >>``` can be used with integers and have applications in binary computations.
 
 ## Reserved Keywords
 Go has the following 25 reserved keywords:
 
 | break | case | chan | const | continue |
 | :---: | :---: | :---: | :---: | :---: |
-| default | defer | else | fallthrough | for |
-| func | go | goto | if | import | 
-| interface | map | package | range | return |
-| select | struct | switch | type | var |
+| **default** | **defer** | **else** | **fallthrough** | **for** |
+| **func** | **go** | **goto** | **if** | **import** | 
+| **interface** | **map** | **package** | **range** | **return** |
+| **select** | **struct** | **switch** | **type** | **var** |
 
 ## Binding
 - Identifiers are bound to their type and address at compile time.
-- Operators are also bound at compile time. Urinary operators bind first, then multiplication operators, addition operators, comparison operators, && and ||.
+- Operators are also bound at compile time. Urinary operators bind first, then multiplication operators, addition operators, comparison operators, ```&&``` and ```||```.
 
 ## Limitations
 - Arrays can only store data of the same type.
