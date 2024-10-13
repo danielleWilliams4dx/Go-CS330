@@ -15,12 +15,12 @@ Information about this language can be found in documentation on [The Go Program
    
 ## Module Set-up and Running Code
 1. A helpful video can be found [here](https://www.youtube.com/watch?v=1MXIGYrMk80).
-2. Type **go mod init** in a terminal window followed by the name of your code’s module to enable dependency tracking. This command creates a go.mod file which tracks the modules of all imported packages in your code.
+2. Type ```go mod init``` in a terminal window followed by the name of your code’s module to enable dependency tracking. This command creates a go.mod file which tracks the modules of all imported packages in your code.
 3. Create a .go file in your new module.
 4. Write your program. See [helloExample](helloExample) for a basic example.
-5. To run your file, **cd** to your new module and then type **go run fileName.go**.
+5. To run your file, **cd** to your new module and then type ```go run fileName.go```.
    
 ## Comments
 **Comments in Go are the same as in languages like Java and JavaScript.**
--  // - Single line comments
--  /*…*/  - Multi line comments 
+-  ```//``` - Single line comments
+-  ```/* … */```  - Multi line comments 
