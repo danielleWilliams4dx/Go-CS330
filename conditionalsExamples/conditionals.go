@@ -30,6 +30,10 @@ func main() {
 	fruitSlice = append(fruitSlice, fruit) // appending fruit to fruitSlice
 	fmt.Println(fruitSlice)
 	enoughFruits(fruitSlice)
+	// // prints every fruit in fruitSlice with its index
+	// for i,fruit := range fruitSlice{
+	// 	fmt.Println("index: " + fmt.Sprint(i) + " item: " + fruit)
+	// }
 	fmt.Println()
 
 	today := Date{12,10,2024};
@@ -40,6 +44,8 @@ func main() {
 	safeToEat(fruitSlice, "apple", bestBy, today)
 	fmt.Println()
 
+	numberCompliments(3) // try a different number!
+	fmt.Println()
 	favFruit()
 }
 
@@ -116,5 +122,23 @@ func favFruit(){
 			fmt.Println("Weird, though I admire it.")
 		default:
 			fmt.Println("You chose...Poorly.")
+	}
+}
+
+func numberCompliments(num int){
+	switch num{
+		case 1:
+			fmt.Print("There’s only one of you!")
+		case 2:
+			fmt.Print("You’re too amazing!")
+		case 3:
+			fmt.Print("You’re magic! ")
+			fallthrough
+		case 4:
+			fmt.Print("You’re forever my favorite!")
+		case 5:
+			fmt.Print("You deserve a high five!")
+		default:
+			fmt.Print("I’m sure you’re great!")
 	}
 }
