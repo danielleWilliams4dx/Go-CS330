@@ -11,9 +11,9 @@ In Go, boolean values are predetermined constants, ```true``` and ```false```. I
 ## Conditional Statements
 Go supports if, if-else, if-else if-else, and switch statements. 
 ### if, if-else, if-else if-else
-For these selection control statements, Go delimits code blocks under each condition using curly braces ‘{ }’, which avoids the dangling else problem. 
+For these selection control statements, Go delimits code blocks under each condition using curly braces ```{ }```, which avoids the dangling else problem. 
 
-**Note:** ‘if else’ must be on the same line as the closing ‘}’ that delimits the end of the above code block.
+**Note:** ```if else``` must be on the same line as the closing brace ```}``` that delimits the end of the above code block.
 
 ```
 if(len(mySlice) >= 3){
@@ -27,7 +27,7 @@ if(len(mySlice) >= 3){
 See [conditionalsExamples](https://github.com/danielleWilliams4dx/Go-CS330/tree/main/conditionalsExamples) for more examples.
 
 ### Switch Statements
-Breaks are implicit and do not need to be written explicitly inside of individual cases. However, if you want your case to fall through into the next one, use the ```fallthrough``` keyword. ```continue``` cannot be used to evaluate all of the conditions. For switch statements, Go delimits code blocks under each case using a colon ‘:’.
+Breaks are implicit and do not need to be written explicitly inside of individual cases. However, if you want your case to fall through into the next one, use the ```fallthrough``` keyword. ```continue``` cannot be used to evaluate all of the conditions. For switch statements, Go delimits code blocks under each case using a colon ```:```.
 
 ```
 func numberCompliments(num int){
