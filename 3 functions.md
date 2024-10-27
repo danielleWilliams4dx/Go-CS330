@@ -37,6 +37,13 @@ func swap2(a *int, b *int){
 	*b = temp
 }
 ```
+```
+// recursively calculates a factorial
+func factorial(num int) int{
+	if(num == 1 || num == 0){ return 1 }
+	return num*factorial(num-1)
+}
+```
 See [functionExamples](https://github.com/danielleWilliams4dx/Go-CS330/tree/main/functionExamples) for more examples.
 
 [Agrawal, M. (2023, March 15). Golang Call by Reference and Call by Value. Scaler. Retrieved October 5, 2024.](https://www.scaler.com/topics/golang/golang-call-by-reference-and-call-by-value/) 
