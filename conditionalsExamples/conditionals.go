@@ -125,6 +125,7 @@ func favFruit(){
 	}
 }
 
+// fallthrough example
 func numberCompliments(num int){
 	switch num{
 		case 1:
@@ -133,7 +134,7 @@ func numberCompliments(num int){
 			fmt.Print("You’re too amazing!")
 		case 3:
 			fmt.Print("You’re magic! ")
-			fallthrough
+			fallthrough // overrides implicit break and falls into case 4
 		case 4:
 			fmt.Print("You’re forever my favorite!")
 		case 5:
