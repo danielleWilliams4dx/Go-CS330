@@ -87,7 +87,7 @@ func compareDate(day1 Date, day2 Date) bool{
 	return false
 }
 
-// returns true if a list of ingredients contains the given allergen, fale otherwise
+// returns true if a list of ingredients contains the given allergen, false otherwise
 func containsAllergen(ingredients []string, allergen string) bool{
 	fmt.Println("[Checking for allergen]")
 	for i := 0; i < len(ingredients); i++{
