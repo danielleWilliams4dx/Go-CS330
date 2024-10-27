@@ -64,7 +64,7 @@ Variables can be declared explicitly with ```var``` and its type (with its name 
 The reflect package has a ```TypeOf``` function that can be used to check the type of a variable.
 
 ## Introduction to Structs
-In Go, ```structs```, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the **type** and **struct** keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the **func** keyword and the function name. Struct attributes and methods can be accessed using the '.' dot operator.
+In Go, ```structs```, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the ```type``` and ```struct``` keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the ```func``` keyword and the function name. Struct attributes and methods can be accessed using the ```.``` dot operator.
 
 ```
 package main
