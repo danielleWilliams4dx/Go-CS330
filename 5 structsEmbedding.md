@@ -72,5 +72,5 @@ func (s Student) getName() string{
 }
 
 // in another function:
-fmt.Println("My name is " s.getName())
+fmt.Println("My name is " + s.getName())
 ```
