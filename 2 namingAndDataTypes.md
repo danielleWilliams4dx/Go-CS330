@@ -3,12 +3,12 @@ This file references the [Go programming language documentation](https://go.dev/
 
 Additional sources are cited below.
 
-## Naming Requirements and Conventions for Variables, Structure Instances, and Functions
+## Naming Requirements and Conventions
 - Names are case sensitive
 - Names must begin with a letter or underscore and cannot begin with a digit or symbol
 - camelCase is conventionally used rather than snake_case
-- Internal identifiers should begin with a lowercase letter
-- Exported identifiers should begin with a capital letter
+- Internal identifiers (similar to ```private```) should begin with a lowercase letter
+- Exported identifiers (similar to ```public```) should begin with a capital letter
 
 ```
 // internal
@@ -63,34 +63,6 @@ Variables can be declared explicitly with ```var``` and its type (with its name 
 
 The reflect package has a ```TypeOf``` function that can be used to check the type of a variable.
 
-## Introduction to Structs
-In Go, ```structs```, or structures, are user-defined types and are similar to classes in traditional object-oriented programming. Structs are declared with the ```type``` and ```struct``` keywords. Methods can be defined on types with a receiver argument, which specifies the type and is placed between the ```func``` keyword and the function name. Struct attributes and methods can be accessed using the ```.``` dot operator.
-
-```
-package main
-
-import "fmt"
-
-type Cat struct {
-	name string
-	breed string
-	age int
-}
-
-func (c Cat) Meow(){
-	fmt.Println(c.name + " says meow!")
-}
-
-func main() {
-	luna := Cat{"Oops!", "Siamese", 8}
-	luna.name = "Luna" // changes the name attribute from Oops! to Luna
-	luna.Meow() // Luna says meow!
-}
-```
-[W3Schools. (n.d). Go Structures. Retrieved 28 September 20, 2024.](https://www.w3schools.com/go/go_struct.php)
-
-[The Go Programming Language. (n.d). Methods. Retrieved 28 September 20, 2024.](https://go.dev/tour/methods/1)
-
 ## Type Conversions
 Go does not support implicit type conversion except for mixed operations of variables with constants in which the lower data type is cast to a higher data type. Attempting to implicitly cast in the other direction, such as converting a floating point constant to an integer, throws an error.
 
@@ -98,7 +70,7 @@ The syntax for converting between types is as follows:
 
 ```variable = desiredType(variable)```
 
-[The Go Programming Language. (n.d). Type Conversions. Retrieved 21 September 20, 2024.](https://go.dev/tour/basics/13)
+[The Go Programming Language. (n.d). Type Conversions. Retrieved September 21, 2024.](https://go.dev/tour/basics/13)
 
 ## Operators
 - The assignment operator ```=``` can be used with any data type.
