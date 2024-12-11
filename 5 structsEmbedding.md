@@ -40,7 +40,7 @@ Like everything else in Go, ```struct``` instances and functions should use the 
 Go does not have standard methods that serve a similar purpose across all structs such as ```toString()``` in Java or  ```__str__``` in Python.
 
 ## Inheritance
-Go does not support traditional inheritance seen in languages like Java and Python that are built for object-oriented programming. There are no **IS-A** relationships in Go, only **HAS-A** relationships are viable and can be created through _struct embedding_ (vanigupta20024, 2020). This notion in which a ```struct``` is utilized to create another is called _composition_ . A single ```struct``` can embed any number of other structures.
+Go does not support traditional inheritance seen in languages like Java and Python that are built for object-oriented programming. There are no **IS-A** relationships in Go, only **HAS-A** relationships are viable and can be created through _struct embedding_ (vanigupta20024, 2020). This notion in which a ```struct``` is utilized to create another is called _composition_. A single ```struct``` can embed any number of other structures.
 
 ```
 type Person struct {
