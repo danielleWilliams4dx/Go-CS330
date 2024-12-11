@@ -1,0 +1,23 @@
+Snack Time,Heal,-15,30,100,0
+Coffee Run,Heal,-25,20,100,13
+Second Breakfast,Heal,-40,15,100,17
+Sugar Rush,Heal,-60,10,100,25
+Energy Drink Blast,Heal,-80,5,100,35
+Rotten Tomato Chuck,Physical,20,30,100,0
+Sky Uppercut,Physical,35,20,100,14
+Leg Sweep,Physical,50,15,90,18
+Triple Arrow,Physical,70,5,80,22
+Flying Side Kick,Physical,90,5,90,31
+Glitter Bomb,Magic,30,20,80,0
+Hazy Hex,Magic,40,15,100,15
+Potion Smash,Magic,60,10,80,20
+Biohazard,Magic,80,5,90,26
+Incantation of Irritability,Magic,100,5,80,37
+Slimy Slap,Physical,10,30,80,0
+Acid Burn,Magic,30,10,80,0
+Bone Break,Physical,15,20,90,0
+Skull Smash,Physical,40,15,70,0
+Shaking Shriek,Heal,-20,10,100,0
+Brain Muffin,Heal,-40,5,100,0
+Storm Strike,Magic,60,15,90,0
+Ending Spark,Magic,80,5,90,0
