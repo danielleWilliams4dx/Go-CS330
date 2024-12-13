@@ -13,7 +13,7 @@ Go supports if, if-else, if-else if-else, and switch statements.
 ### if, if-else, if-else if-else
 For these selection control statements, Go delimits code blocks under each condition using curly braces ```{ }```, which avoids the dangling else problem. 
 
-**Note:** ```if else``` must be on the same line as the closing brace ```}``` that delimits the end of the above code block.
+**Note:** ```else if``` and ```else``` must be on the same line as the closing brace ```}``` that delimits the end of the above code block.
 
 ```
 if(len(mySlice) >= 3){
