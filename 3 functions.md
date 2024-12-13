@@ -30,7 +30,7 @@ func swap1(a int, b int){
 	b = temp
 }
 
-//with pointers, pass-by-reference
+// with pointers, pass-by-reference
 func swap2(a *int, b *int){
 	var temp int = *a
 	*a = *b
