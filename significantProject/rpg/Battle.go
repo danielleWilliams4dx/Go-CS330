@@ -113,9 +113,15 @@ func ChooseMoveRestore(h *Hero) *Move{
 	return &h.moveset[index]
 }
 
-//randomly chooses a move from the Enemy's moveset and calls it
+//randomly chooses a move from the Enemy's moveset that still has PP and calls it
 func chooseEnemyMove(e *Enemy, h *Hero){
-	move := &e.moveset[rand.Intn(len(e.moveset))]
+	movesWithPP := []*Move{}
+	for i:= 0; i < len(e.moveset); i++{
+		if(e.moveset[i].GetPP() > 0){
+			movesWithPP = append(movesWithPP, &e.moveset[i])
+		}
+	}
+	move := movesWithPP[rand.Intn(len(movesWithPP))]
 
 	if(move.GetCategory() == "Heal"){
 		e.HealMove(move)
@@ -135,11 +141,14 @@ func chooseHeroMove(h *Hero, e *Enemy) bool{
 		return heroTurnLogic(h, e)
 	}else{
 		move := &h.moveset[index]
-
-		if(move.GetCategory() == "Heal"){
-			h.HealMove(move)
+		if(move.GetPP() > 0){
+			if(move.GetCategory() == "Heal"){
+				h.HealMove(move)
+			}else{
+				h.Attack(move, e)
+			}
 		}else{
-			h.Attack(move, e)
+			fmt.Print("\n" + move.GetName() + " is out of PP and failed!\n")
 		}
 		return true
 	}
@@ -321,7 +330,7 @@ func FinalBoss(h *Hero, el []Enemy) bool{
 		GetEnemyByName(el,"Markos the Misunderstood (Possessed)"),
 	}
 
-	for i := 2; i < len(finalBosses); i++{
+	for i := 0; i < len(finalBosses); i++{
 		if(!standaloneBattle(h, &finalBosses[i])){
 			return false
 		}

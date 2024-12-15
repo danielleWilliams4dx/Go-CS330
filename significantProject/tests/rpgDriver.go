@@ -21,9 +21,9 @@ func main(){
 	// attackTest()
 	// reviveTest()
 	// ppHealTest()
-	// battleTest()
+	battleTest()
 	// emptyInventoryTest()
-	dungeonTraversalTest()
+	// dungeonTraversalTest()
 	// storyTest()
 }
 
@@ -206,6 +206,10 @@ func battleTest(){
 		p1.PickUpHealingItem(rpg.GetRandomHealingItem(healingItemList))
 	}
 	op := rpg.GetRandomEnemy(rpg.GetEnemyGroup(enemyList, "Slime"))
+	p1.PickUpHealingItem(rpg.GetRandomHealingItem(healingItemList))
+	p1.PickUpHealingItem(rpg.GetRandomHealingItem(healingItemList))
+	p1.PickUpHealingItem(rpg.GetRandomHealingItem(healingItemList))
+	p1.PickUpHealingItem(rpg.GetRandomHealingItem(healingItemList))
 
 	// //Struggle mini test
 	// p1.RemoveAllPP()
