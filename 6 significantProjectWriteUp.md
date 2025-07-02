@@ -1,6 +1,8 @@
 # Significant Project Write-up
 My signifcant project can be found [here](https://github.com/danielleWilliams4dx/Go-CS330/tree/main/significantProject).
 
+**Play the game in a terminal by downloading the entire ```significantProject``` folder, and running the ```rpg.go``` file in the ```app``` folder.**
+
 ## UML Diagram
 ![RPG_UML_Labeled](https://github.com/user-attachments/assets/25237cc2-f608-43b6-a683-b99f751168d7)
 
